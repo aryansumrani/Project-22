@@ -15,6 +15,9 @@ function setup() {
 	createCanvas(800, 700);
 	rectMode(CENTER);
 	
+	box1 = new b(300,350,10,80);
+    box2 = new b(350,390,100,10);
+    box3 = new b(400,350,10,80);
 
 	packageSprite=createSprite(width/2, 80, 10,10);
 	packageSprite.addImage(packageIMG)
@@ -55,7 +58,9 @@ function draw() {
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
   drawSprites();
- 
+ box1.display();
+ box2.display();
+ box3.display();
 }
 
 function keyPressed() {
